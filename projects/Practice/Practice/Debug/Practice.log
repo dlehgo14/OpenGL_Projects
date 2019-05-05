@@ -1,0 +1,9 @@
+﻿  FirstPractice.cpp
+c:\users\cglab\desktop\projects\utils\arcball.h(82): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\cglab\desktop\projects\projects\practice\practice\pyramid.h(290): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\pyramid.h(291): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Practice.vcxproj -> C:\Users\cglab\Desktop\Projects\projects\Practice\Debug\Practice.exe
