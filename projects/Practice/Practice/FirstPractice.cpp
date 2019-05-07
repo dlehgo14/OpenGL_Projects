@@ -99,7 +99,7 @@ int main()
 	lamp = new Cube();
 	bucket = new Bucket(12, 6, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, false, false);
 	fighter_plane = new Fighter_plane();
-	paper = new Paper(3.0f, 2.0f);
+	paper = new Paper(5.0f, 4.0f);
 
 
 	while (!glfwWindowShouldClose(window)) {
@@ -163,14 +163,14 @@ void loadTexture() {
 	// Set texture parameters for wrapping.
 	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
 
 	// Set texture parameters for filtering.
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	int width, height, nrChannels;
-	unsigned char *image = stbi_load("byungjin.bmp", &width, &height, &nrChannels, 0);
+	unsigned char *image = stbi_load("awesomeface.bmp", &width, &height, &nrChannels, 0);
 	if (!image) {
 		printf("texture %s loading error ... \n", "container.bmp");
 	}
@@ -202,7 +202,6 @@ void render()
 	// pyramid->draw(globalShader);
 
 	// lamp
-	lightPos = glm::vec3(plane_x, plane_y + 1.5f, plane_z);
 	lampShader->use();
 	lampShader->setMat4("view", view);
 	model = glm::mat4(1.0f);
@@ -265,8 +264,12 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action, int mod
 				std::cout << "ARCBALL: Model  rotation mode" << std::endl;
 			}
 		}
+		else if (key == GLFW_KEY_R) {
+			camArcBall.init(SCR_WIDTH, SCR_HEIGHT, arcballSpeed, true, true);
+			modelArcBall.init(SCR_WIDTH, SCR_HEIGHT, arcballSpeed, true, true);
+		}
 		else if (key == GLFW_KEY_W) {
-
+			paper->set_force(50, 50, 0.0f, 0.0f, 1.0f, 10.0f);
 		}
 	}
 }

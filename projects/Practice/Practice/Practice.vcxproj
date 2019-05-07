@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="bucket.h" />
     <ClInclude Include="fighter_plane.h" />
+    <ClInclude Include="MyUtils.h" />
     <ClInclude Include="paper.h" />
     <ClInclude Include="pyramid.h" />
   </ItemGroup>
@@ -135,6 +136,7 @@
     <None Include="lamp.vs" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="awesomeface.bmp" />
     <Image Include="byungjin.bmp" />
     <Image Include="container.bmp" />
   </ItemGroup>
