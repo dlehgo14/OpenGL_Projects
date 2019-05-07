@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="bucket.h" />
     <ClInclude Include="fighter_plane.h" />
+    <ClInclude Include="paper.h" />
     <ClInclude Include="pyramid.h" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +135,7 @@
     <None Include="lamp.vs" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="byungjin.bmp" />
     <Image Include="container.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

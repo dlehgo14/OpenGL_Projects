@@ -29,6 +29,9 @@
     <ClInclude Include="bucket.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="paper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="globalShader.vs">
@@ -46,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="container.bmp">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="byungjin.bmp">
       <Filter>Source Files</Filter>
     </Image>
   </ItemGroup>

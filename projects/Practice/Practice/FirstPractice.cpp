@@ -10,6 +10,9 @@
 #include <arcball.h>
 #include <cstdlib>
 #include "pyramid.h"
+#include "bucket.h"
+#include "fighter_plane.h"
+#include "paper.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 
@@ -26,11 +29,14 @@ void loadTexture();
 GLFWwindow *window = NULL;
 Shader *globalShader = NULL;
 Shader *lampShader = NULL;
-unsigned int SCR_WIDTH = 800;
-unsigned int SCR_HEIGHT = 600;
-float BACKGRAOUND_COLOR[4] = { 0.2f, 0.3f, 0.3f, 1.0f };
+unsigned int SCR_WIDTH = 1600;
+unsigned int SCR_HEIGHT = 800;
+float BACKGRAOUND_COLOR[4] = { 0.5f, 0.5f, 0.5f, 1.0f };
 Pyramid *pyramid;
 Cube *lamp;
+Bucket *bucket;
+Fighter_plane *fighter_plane;
+Paper *paper;
 
 // glm variables
 glm::mat4 projection, view, model;
@@ -53,7 +59,10 @@ glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 glm::vec3 lightColor(1.0f, 1.0f, 1.0f);
 float ambientStrength = 0.1f;
 float specularStrength = 0.5f;
-float specularPower = 64.0f;
+float specularPower = 32.0f;
+
+// for fighter plane location
+float plane_x, plane_y, plane_z;
 
 int main()
 {
@@ -88,6 +97,10 @@ int main()
 	// create a new pyramid
 	pyramid = new Pyramid(1.0f, 5.0f);
 	lamp = new Cube();
+	bucket = new Bucket(12, 6, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, false, false);
+	fighter_plane = new Fighter_plane();
+	paper = new Paper(3.0f, 2.0f);
+
 
 	while (!glfwWindowShouldClose(window)) {
 		render();
@@ -157,7 +170,7 @@ void loadTexture() {
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	int width, height, nrChannels;
-	unsigned char *image = stbi_load("container.bmp", &width, &height, &nrChannels, 0);
+	unsigned char *image = stbi_load("byungjin.bmp", &width, &height, &nrChannels, 0);
 	if (!image) {
 		printf("texture %s loading error ... \n", "container.bmp");
 	}
@@ -186,9 +199,10 @@ void render()
 	globalShader->setMat4("view", view);
 	model = modelArcBall.createRotationMatrix();
 	globalShader->setMat4("model", model);
-	pyramid->draw(globalShader);
+	// pyramid->draw(globalShader);
 
 	// lamp
+	lightPos = glm::vec3(plane_x, plane_y + 1.5f, plane_z);
 	lampShader->use();
 	lampShader->setMat4("view", view);
 	model = glm::mat4(1.0f);
@@ -197,6 +211,32 @@ void render()
 	lampShader->setMat4("model", model);
 	lamp->draw(lampShader);
 
+	// bucket
+	/*
+	globalShader->use();
+	globalShader->setMat4("view", view);
+	model = modelArcBall.createRotationMatrix();
+	globalShader->setMat4("model", model);
+	bucket->draw(globalShader);
+	*/
+
+	// fighter plane
+	/*
+	globalShader->use();
+	globalShader->setMat4("view", view);
+	model = modelArcBall.createRotationMatrix();
+	model = glm::rotate(model, glm::radians(90.f), glm::vec3(1.0f, 0.0f, 0.0f));
+	model = glm::scale(model, glm::vec3(0.3f, 0.3f, 0.3f));
+	globalShader->setMat4("model", model);
+	fighter_plane->draw(globalShader, model);
+	*/
+
+	// paper
+	globalShader->use();
+	globalShader->setMat4("view", view);
+	model = modelArcBall.createRotationMatrix();
+	globalShader->setMat4("model", model);
+	paper->draw(globalShader);
 	glfwSwapBuffers(window);
 }
 
@@ -225,8 +265,10 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action, int mod
 				std::cout << "ARCBALL: Model  rotation mode" << std::endl;
 			}
 		}
+		else if (key == GLFW_KEY_W) {
+
+		}
 	}
-	
 }
 
 void mouse_button_callback(GLFWwindow *window, int button, int action, int mods) {

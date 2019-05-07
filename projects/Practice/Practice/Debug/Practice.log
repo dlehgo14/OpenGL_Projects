@@ -1,9 +1,25 @@
 ﻿  FirstPractice.cpp
-c:\users\cglab\desktop\projects\utils\arcball.h(82): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\utils\arcball.h(82): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\cglab\desktop\projects\projects\practice\practice\pyramid.h(290): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\pyramid.h(291): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  Practice.vcxproj -> C:\Users\cglab\Desktop\Projects\projects\Practice\Debug\Practice.exe
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\pyramid.h(290): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\pyramid.h(291): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(88): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(32): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(321): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(322): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(323): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(324): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(325): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(326): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(327): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(328): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\bucket.h(329): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\fighter_plane.h(33): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\fighter_plane.h(34): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\fighter_plane.h(35): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\paper.h(25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\my\desktop\projects\opengl_projects\projects\practice\practice\firstpractice.cpp(102): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Practice.vcxproj -> C:\Users\my\Desktop\Projects\OpenGL_Projects\projects\Practice\Debug\Practice.exe
