@@ -12,7 +12,7 @@
 #include "pyramid.h"
 #include "bucket.h"
 #include "fighter_plane.h"
-#include "paper.h"
+#include "paper2.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 
@@ -36,7 +36,7 @@ Pyramid *pyramid;
 Cube *lamp;
 Bucket *bucket;
 Fighter_plane *fighter_plane;
-Paper *paper;
+Paper2 *paper;
 
 // glm variables
 glm::mat4 projection, view, model;
@@ -99,7 +99,7 @@ int main()
 	lamp = new Cube();
 	bucket = new Bucket(12, 6, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, false, false);
 	fighter_plane = new Fighter_plane();
-	paper = new Paper(5.0f, 4.0f);
+	paper = new Paper2(5.0f, 4.0f);
 
 
 	while (!glfwWindowShouldClose(window)) {
@@ -269,7 +269,13 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action, int mod
 			modelArcBall.init(SCR_WIDTH, SCR_HEIGHT, arcballSpeed, true, true);
 		}
 		else if (key == GLFW_KEY_W) {
-			paper->set_force(50, 50, 0.0f, 0.0f, 1.0f, 10.0f);
+			paper->set_force(50, 50, 0.0f, 0.0f, 1.0f, 1.0f);
+		}
+		else if (key == GLFW_KEY_S) {
+			paper->set_force(50, 50, 0.0f, 0.0f, 1.0f, -1.0f);
+		}
+		else if (key == GLFW_KEY_F) {
+			paper->forceModeSwitch();
 		}
 	}
 }

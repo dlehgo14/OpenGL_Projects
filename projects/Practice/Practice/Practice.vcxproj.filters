@@ -35,6 +35,9 @@
     <ClInclude Include="MyUtils.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="paper2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="globalShader.vs">

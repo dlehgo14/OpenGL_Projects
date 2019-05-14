@@ -20,16 +20,18 @@ c:\users\cglab\desktop\projects\projects\practice\practice\bucket.h(329): warnin
 c:\users\cglab\desktop\projects\projects\practice\practice\fighter_plane.h(33): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\cglab\desktop\projects\projects\practice\practice\fighter_plane.h(34): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\cglab\desktop\projects\projects\practice\practice\fighter_plane.h(35): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(179): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(180): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(181): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(182): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(183): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(184): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(185): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(186): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(187): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
-c:\users\cglab\desktop\projects\projects\practice\practice\paper.h(242): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(77): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(120): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(245): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(246): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(247): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(248): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(249): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(250): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(251): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(252): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(253): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\cglab\desktop\projects\projects\practice\practice\paper2.h(382): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 c:\users\cglab\desktop\projects\projects\practice\practice\firstpractice.cpp(102): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   Practice.vcxproj -> C:\Users\cglab\Desktop\Projects\projects\Practice\Debug\Practice.exe

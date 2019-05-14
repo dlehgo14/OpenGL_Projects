@@ -127,6 +127,7 @@
     <ClInclude Include="fighter_plane.h" />
     <ClInclude Include="MyUtils.h" />
     <ClInclude Include="paper.h" />
+    <ClInclude Include="paper2.h" />
     <ClInclude Include="pyramid.h" />
   </ItemGroup>
   <ItemGroup>
