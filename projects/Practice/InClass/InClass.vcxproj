@@ -122,6 +122,16 @@
   <ItemGroup>
     <ClCompile Include="InClass08.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="global_08.fs" />
+    <None Include="global_08.vs" />
+    <None Include="lamp.fs" />
+    <None Include="lamp.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\그래픽스\Source code_new\Source3\Source3\30_DiffuseMap\container2.bmp" />
+    <Image Include="..\..\..\..\그래픽스\Source code_new\Source3\Source3\31_SpecularMap\container2_specular.bmp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

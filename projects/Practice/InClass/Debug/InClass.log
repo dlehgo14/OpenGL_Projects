@@ -1,0 +1,7 @@
+﻿  InClass08.cpp
+c:\users\cglab\desktop\projects\utils\arcball.h(82): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  InClass.vcxproj -> C:\Users\cglab\Desktop\Projects\projects\Practice\Debug\InClass.exe
